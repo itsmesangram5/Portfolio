@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --bg-color : #1d1c1c;
+    --theme-color: #12dbd8;
+    --fonts :  "Poppins", sans-serif;
+    --font-color : #fff;
+}
+
+body{
+    background-color: rgb(29, 27, 22);
+    font-family: var(--fonts);    
+}
+
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px; /* you screen width is 1500px  = 300 : it will be 150 in left, and 150px in right */
+    margin:  0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav .logo{
+    color: var(--font-color);
+    padding: 24px;
+    font-size: 35px;
+}
+
+nav .main-nav{
+    display: flex;
+}
+
+nav .main-nav li{
+    padding: 24px;
+}
+
+nav .main-nav li a{
+    color: var(--font-color);
+}
+
+nav .main-nav li a:hover{
+    color: var(--theme-color);
+}
+
+.logo:hover{
+    color: var(--theme-color);
+}
+
+/* Hero section CSS started */
+
+.hero-content{
+    width: 50%;
+}
+
+.hero-section{
+    margin-top: 60px;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.hero-designation{
+    color: var(--font-color);
+    font-size: 50px;
+}
+
+.hero-title, .hero-fullname, .hero-details{
+    color: var(--font-color);
+}
+
+.hero-details{
+    text-transform: none;
+}
+
+.hero-fullname{
+    margin-top: 40px;
+}
+
+.hero-designation{
+    margin-bottom: 40px;
+}
+
+.hero-fullname{
+    font-size: 50px;
+}
+
+.hero-name{
+    color: var(--theme-color);
+}
+
+.inner img{
+    height: 500px;
+}
+
+.hero-image{
+    width: 50%;
+}
+
+.thumbnail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 70px;
+}
+
+.thumbnail:hover .inner{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Hero section CSS completed */
+
+
+/* Features section started */ 
+
+.typed-cursor{
+    display: none;
+}
+
+hr{
+    margin: 40px 0;
+}
+
+.features{
+    color: var(--theme-color);
+}
+
+.features-title{
+    color: var(--font-color);
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.card{
+    color: var(--font-color);
+    width: 33%;
+    background-color: #0f0f0f;
+    margin: 50px 20px 20px 0;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.feature-title{
+    margin: 20px 0;
+    font-size: 35px;
+}
+
+.features-cards{
+    display: flex;
+}
+
+
+.costomModel{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.model-content{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 1000px;
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.project-info{
+    color: var(--theme-color);
+    background-color: transparent;
+    border: 2px solid var(--theme-color);
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.close{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    text-align: right;
+    padding-right: 40px;    
+}
+
+
+.model-image img{
+  height: 750px;
+  width: 700px;
+}
+
+
+.model-title{
+    color: var(--theme-color);
+    font-size: 40px;
+}
+
+.project-descript{
+    padding: 15px;
+}
+
+.project-images{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.project-images img{
+    height: 50px;
+    width: 50px;
+}
+
+.projects{
+    display: flex;
+}
+
+.e-commerce, .spa, .dashboard{
+    width: 33%;
+    margin-right: 20px;
+}
+
+.project-cards{
+    width: 100% !important;
+    color: var(--font-color);
+    background-color: #0f0f0f;
+    margin: 50px 20px 20px 0;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.contact-section{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-info{
+    margin: 20px 0;
+    color: white;
+}
+
+.contact-info a{
+    color: white;
+}
+
+.contact-button{
+    border: 3px solid var(--theme-color);
+    color: var(--theme-color);
+    padding: 16px;
+    width: 50%;
+    margin: auto;    
+}
+
+.footer-content{
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+}
